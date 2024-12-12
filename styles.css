@@ -53,13 +53,17 @@
     /* Style the list items */
     li {
     cursor: pointer;
-    position: relative;
     padding: 10px 10px 20px 20px;
     background-color:whitesmoke;
     font-size: medium;
     color: black;
     list-style-type: none;
     transition: .3s;
+    }
+    .taskText {
+    display: inline-block;
+    max-width: 70%;
+    contain: content;
     }
     /* Set all odd list items to a different color (zebra-stripes) */
     li:nth-child(odd) {
@@ -74,12 +78,9 @@
     background-color: lightpink;
     text-decoration: line-through;
     }
-    /* Position span element inside li */
-    span {
-        position: relative;
-        top: 5px;
-    }
+    /* Position and style done and delete elements inside li */
     button.delete, button.done {
+    
     float: right;
     margin-left: 5px;
     height: 30px;
